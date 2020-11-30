@@ -84,6 +84,7 @@ public int[] categoryCounts(String[] foodCategories) {
     Since the programmer is creating a method that finds the cheapest food item, a cost field must be added to the Food class.
     The cost field in the food class would be public so that it can be accessed outside of the class. The cost field could return an integer or double value to represent a price. The cost field will not take in any parameters.
     The constructor for the food class must take in an additional parameter that initializes the cost. This paramater will be the same data type as the return type of the cost field.
+    A private double or int "price" will be added to store the cost in the Food class, and a public getCost() accessor method would be used to access it from outside the class.
     No additional changes to the Menu class would have to be made other than the addition of the method itself.
     The access modifier for the method would be public so that it can be accessed from outside the class.
     The method leastExpensiveChildFriendly() will not take any parameters.
