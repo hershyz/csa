@@ -1,0 +1,43 @@
+//Selection sort:
+    public static void sort(int[] arr) {
+        for (int i = 0; i < arr.length - 1; i++) {
+            int indexLowest = indexOfMinimum(arr, i); // Finds the min index from a start index
+            swap(arr, i, indexLowest); // Swaps the current index and the index of the lowest number
+        }
+        System.out.println(Arrays.toString(arr));
+    }
+
+//Insertion sort:
+    public static void insertionSort(int[] arr) {
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = i; j < arr.length - 1; j++) { // Nested for loop
+                insert(arr, j, arr[j+1]); // Compares adjacent values and swaps accordingly swaps so that the values are in ascending order.
+            }
+        }
+        System.out.println(Arrays.toString(arr));
+    }
+
+//Challenge
+    public static void insertionSort(int[] arr) {
+
+        //Sorts the array in ascending order:
+        for (int i = 0; i < arr.length - 1; i++) {
+            for (int j = i; j < arr.length - 1; j++) {
+                insert(arr, j, arr[j+1]);
+            }
+        }
+
+        //Reverses the array using another array:
+        int[] reversed = new int[arr.length];
+        int index = 0;
+        for (int i = arr.length - 1; i >= 0; i--) {
+            reversed[index] = arr[i];
+            index++;
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = reversed[i];
+        }
+
+        System.out.println(Arrays.toString(arr));
+    }
