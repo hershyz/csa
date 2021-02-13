@@ -1,1 +1,2 @@
-# hershyz/csa
+csa assignments and frqs
+
