@@ -64,11 +64,11 @@ public class Main {
         for (int i = 0; i < roster.length - 1; i++) {
             int index = i;
             for (int j = i + 1; j < roster.length; j++) {
-                if (roster[j].getGpa() < roster[index].getGpa()) {
+                if (roster[j].getGpa() > roster[index].getGpa()) {
                     index = j;
                 }
                 if (roster[j].getGpa() == roster[index].getGpa()) {
-                    if (roster[j].getCreditHrs() < roster[index].getCreditHrs()) {
+                    if (roster[j].getCreditHrs() > roster[index].getCreditHrs()) {
                         index = j;
                     }
                 }
