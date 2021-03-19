@@ -12,6 +12,10 @@ public abstract class Account {
         return id;
     }
 
+    public double getBalance() {
+        return balance;
+    }
+
     public String toString() {
         return "ID: " + id + ", Balance: " + balance;
     }
